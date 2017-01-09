@@ -1,23 +1,117 @@
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
+* {
+    margin: 0;
+    padding: 0;
+}
+.container-fluid{
+    padding-top: 5px;
+}
+img {
+    width: 100%;
+    height: auto;
 }
 
-[class*="col-"] {
-    float: left;
-    padding: 15px;
+.text-c{
+ text-align: center;
+}
+
+.info p, .info a{
+    text-align: right;
+}
+
+.top{
+    margin-top: 10%;
+    font-size: 2vw;
+}
+
+.info{
+    padding-right: 0px;
+    font-size: 1vw;
+}
+
+.side-nav{
+    font-weight: bold;
+    list-style: none;
+}
+.side-nav ul li, .footer ul{
+    font-weight: normal;
+    list-style: none;
+    padding-left: 12px;
+    line-height: 2.1vw;
+}
+.side-nav a, .address a, .footer a{
+    color: #545454;
+}
+
+.address a{
+    border-bottom: 1px dashed blue;
+}
+.address a:hover, .address a:active{
+    text-decoration: none;
+    color: blue;
+}
+.address a:visited, .address a:focus{
+    text-decoration: none;
+}
+.address{
+    padding-right: 10px;
+}
+.bold{
+    font-weight: bold;
+}
+p.bold:first-child{
+    font-size: 1.3vw;
+}
+.form-inline .search-btn, .form-inline .search-place{
+    font-size: 1.2vw;
+    height: 3vw;
+}
+.form-inline{
+    margin-right: 10px;
+}
+.nav li a{
+    width: 100%;
+}
+
+.footer ul {
+    font-weight: normal;
+    list-style: none;
+    padding-left: 12px;
+    line-height: 1.6vw;
+}
+.grey li:first-child a,.all-grey a{
+    color: #999999;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+.footer .all-grey{
+    line-height: 2vw;
+}
+
+@media screen and (max-width: 1099px){
+    .navbar>ul.nav>li>a{
+        padding-left: 5.3vw;
+        padding-right: 4.5vw;
+    }
+}
+
+
+@media screen and (min-width: 1100px) and (max-width: 1300px){
+    .navbar>ul.nav>li>a{
+
+        padding-left: 5.6vw;
+        padding-right: 5vw;
+    }
+}
+
+@media screen and (min-width: 1300px){
+    .navbar>ul.nav>li>a{
+        padding-left: 5.8vw;
+        padding-right: 5.8vw;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 970px){
+    *{
+        display: none;
+    }
 }
