@@ -2,6 +2,15 @@
     margin: 0;
     padding: 0;
 }
+
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
 .container-fluid{
     padding-top: 5px;
 }
@@ -31,12 +40,14 @@ img {
 .side-nav{
     font-weight: bold;
     list-style: none;
+    font-size: 12px;
+    line-height: 20px;
 }
 .side-nav ul li, .footer ul{
     font-weight: normal;
     list-style: none;
     padding-left: 12px;
-    line-height: 2.1vw;
+    line-height: 27px;
 }
 .side-nav a, .address a, .footer a{
     color: #545454;
@@ -63,7 +74,7 @@ p.bold:first-child{
 }
 .form-inline .search-btn, .form-inline .search-place{
     font-size: 1.2vw;
-    height: 3vw;
+    height: 2.5vw;
 }
 .form-inline{
     margin-right: 10px;
@@ -72,25 +83,43 @@ p.bold:first-child{
     width: 100%;
 }
 
+
+.footer .col-sm-4{
+    padding-left: 27px;
+}
 .footer ul {
     font-weight: normal;
     list-style: none;
     padding-left: 12px;
     line-height: 1.6vw;
+
 }
 .grey li:first-child a,.all-grey a{
     color: #999999;
-    font-size: 20px;
-    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+.grey li:first-child{
+    margin-bottom: 10px;
 }
 .footer .all-grey{
-    line-height: 2vw;
+    line-height: 26px;
 }
+.address-footer{
+    color: #999999;
+    font-size: 14px;
+    text-align: right;
+}
+
+
+
+
+
 
 @media screen and (max-width: 1099px){
     .navbar>ul.nav>li>a{
-        padding-left: 5.3vw;
-        padding-right: 4.5vw;
+        padding-left: 5vw;
+        padding-right: 4vw;
     }
 }
 
@@ -101,6 +130,20 @@ p.bold:first-child{
         padding-left: 5.6vw;
         padding-right: 5vw;
     }
+    .side-nav{
+        font-weight: bold;
+        list-style: none;
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .side-nav ul li, .footer ul{
+        font-weight: normal;
+        list-style: none;
+        padding-left: 12px;
+        line-height: 27px;
+    }
+
 }
 
 @media screen and (min-width: 1300px){
@@ -108,10 +151,24 @@ p.bold:first-child{
         padding-left: 5.8vw;
         padding-right: 5.8vw;
     }
+    .side-nav{
+        font-weight: bold;
+        list-style: none;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .side-nav ul li, .footer ul{
+        font-weight: normal;
+        list-style: none;
+        padding-left: 12px;
+        line-height: 27px;
+    }
+
 }
 
 @media screen and (min-width: 0px) and (max-width: 970px){
-    *{
+    {
         display: none;
     }
 }
